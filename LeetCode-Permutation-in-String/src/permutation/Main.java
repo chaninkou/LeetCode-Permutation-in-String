@@ -1,7 +1,20 @@
 package permutation;
 
 public class Main {
-    public boolean checkInclusion(String s1, String s2) {
+	public static void main(String[] args){
+		// Need to understand this problem better
+		
+		String input1 = "ab";
+		
+		String input2 = "eidbaoo";
+		
+		System.out.println("input1: " + input1 + " input2: " + input2);
+		
+		System.out.println("Output: " + checkInclusion(input1, input2));
+			
+	}
+	
+    public static boolean checkInclusion(String s1, String s2) {
         int s1Len = s1.length();
         int s2Len = s2.length();
         
@@ -34,7 +47,7 @@ public class Main {
         return false;
     }
     
-    private boolean allZero(int[] count){
+    private static boolean allZero(int[] count){
         for(int i = 0; i < 26; i++){
             if(count[i] != 0){
                 return false;
