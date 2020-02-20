@@ -1,6 +1,7 @@
 package permutation;
 
 public class CheckSubStringPermutationFunction {
+	// Permutation is ab = ab or ba
     public static boolean checkInclusion(String s1, String s2) {
     	
     	// Make sure s1 length is not greater than s2, since we want to check if s2 contain all of s1
@@ -42,6 +43,7 @@ public class CheckSubStringPermutationFunction {
     	return false;
     }
     
+    // A method that return false if any of array is not zeroes, other wise true
     private static boolean allZeros(int[] char_counts){
     	for(int i = 0; i < 26; i++){
     		if(char_counts[i] != 0){
