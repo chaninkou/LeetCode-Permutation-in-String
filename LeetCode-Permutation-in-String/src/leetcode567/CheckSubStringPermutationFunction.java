@@ -1,4 +1,4 @@
-package permutation;
+package leetcode567;
 
 public class CheckSubStringPermutationFunction {
 	// Permutation is ab = ab or ba
